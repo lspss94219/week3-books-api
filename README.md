@@ -49,29 +49,29 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
       ```
       {
       "detail": [
-    {
+      {
       "type": "string_too_short",
       "loc": ["body", "title"],
       "msg": "String should have at least 2 characters",
       "input": "A",
       "ctx": { "min_length": 2 }
-    },
-    {
+      },
+      {
       "type": "string_too_short",
       "loc": ["body", "author"],
       "msg": "String should have at least 2 characters",
       "input": "B",
       "ctx": { "min_length": 2 }
-    },
-    {
+      },
+      {
       "type": "greater_than_equal",
       "loc": ["body", "year"],
       "msg": "Input should be greater than or equal to 1900",
       "input": 1800,
       "ctx": { "ge": 1900 }
-    }
-    ]
-    }
+      }
+      ]
+      }
    3. GET /books
       Status 200
       ```
