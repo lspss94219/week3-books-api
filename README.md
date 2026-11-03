@@ -33,6 +33,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
 
 # Testing Results
    1. POST /books(Valid Data)
+      
       Status 201
       ```
       {
@@ -43,10 +44,11 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
       }
 
    2. POST /books(Validation Failure)
+      
       Status 422
       ```
-    {
-     "detail": [
+      {
+      "detail": [
     {
       "type": "string_too_short",
       "loc": ["body", "title"],
@@ -68,8 +70,8 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
       "input": 1800,
       "ctx": { "ge": 1900 }
     }
-     ]
-      }
+    ]
+    }
    3. GET /books
       Status 200
       ```
