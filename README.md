@@ -35,7 +35,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
    1. POST /books(Valid Data)
       Status 201
       ```
-      {
+    {
      "title": "Clean Code",
      "author": "Robert Martin",
      "year": 2008
@@ -44,7 +44,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
    2. POST /books(Validation Failure)
       Status 422
       ```
-      {
+    {
      "detail": [
     {
       "type": "string_too_short",
@@ -72,7 +72,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
    3. GET /books
       Status 200
       ```
-      [
+    [
      {
     "title": "Clean Code",
     "author": "Robert Martin",
@@ -89,7 +89,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
    4. GET /books/1
       Status 200
       ```
-      {
+    {
      "title": "Clean Code",
      "author": "Robert Martin",
      "year": 2008,
@@ -98,7 +98,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
    5. GET /books/999
       Status 404 Not Found
       ```
-      {
+     {
      "detail": "Book not found"
       }
       
