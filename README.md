@@ -103,6 +103,7 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
       }
 
    5. GET /books/999
+      
       Status 404 Not Found
       ```
       {
