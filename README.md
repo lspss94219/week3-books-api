@@ -73,35 +73,38 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
       ]
       }
    3. GET /books
+      
       Status 200
       ```
-    [
-     {
-    "title": "Clean Code",
-    "author": "Robert Martin",
-    "year": 2008,
-    "id": 1
-     },
-     {
-    "title": "Clean Code",
-    "author": "Robert Martin",
-    "year": 2008,
-    "id": 2
-     }
-      ]
-   4. GET /books/1
-      Status 200
-      ```
-    {
-     "title": "Clean Code",
-     "author": "Robert Martin",
-     "year": 2008,
-     "id": 1
+      [
+      {
+      "title": "Clean Code",
+      "author": "Robert Martin",
+      "year": 2008,
+      "id": 1
+      },
+      {
+      "title": "Clean Code",
+      "author": "Robert Martin",
+      "year": 2008,
+      "id": 2
       }
+      ]
+    
+   4. GET /books/1
+      
+      Status 200
+      ```
+      {
+      "title": "Clean Code",
+      "author": "Robert Martin",
+      "year": 2008,
+      "id": 1
+      }
+
    5. GET /books/999
       Status 404 Not Found
       ```
-     {
-     "detail": "Book not found"
+      {
+      "detail": "Book not found"
       }
-      
