@@ -35,12 +35,13 @@ A simple REST API for managing books built with FastAPI, SQLAlchemy, and SQLite.
    1. POST /books(Valid Data)
       Status 201
       ```
-    {
-     "title": "Clean Code",
-     "author": "Robert Martin",
-     "year": 2008
-     "id": 2
-      }
+      {
+  "title": "Clean Code",
+  "author": "Robert Martin",
+  "year": 2008,
+  "id": 2
+}
+
    2. POST /books(Validation Failure)
       Status 422
       ```
